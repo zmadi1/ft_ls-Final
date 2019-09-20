@@ -6,7 +6,7 @@
 /*   By: zmadi <zmadi@student.wethinkcode.co.za>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/19 10:35:20 by zmadi             #+#    #+#             */
-/*   Updated: 2019/09/20 13:27:28 by zmadi            ###   ########.fr       */
+/*   Updated: 2019/09/20 14:04:37 by zmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -116,5 +116,6 @@ int		main(int ac, char **av)
 		ft_no_argument(str, flag);
 	}
 	ft_delete(str);
+	sleep(100);
 	return (0);
 }

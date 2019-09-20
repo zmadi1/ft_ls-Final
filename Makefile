@@ -7,12 +7,15 @@ OBJ =  ft_content_while.o ft_delete.o ft_no_arguments.o ft_changer.o ft_argument
 all: $(NAME)
 
 $(NAME):
+	make -C libft clean
 	@gcc -Wall -Wextra -Werror $(SRCS) $(LIB) -o $(NAME)
 
 clean:
+	make -C libft clean
 	/bin/rm -f $(OBJ)
 
 fclean:
+	make -C libft clean
 	/bin/rm -f $(NAME)
 
 re: fclean all

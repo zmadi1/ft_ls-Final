@@ -6,7 +6,7 @@
 #    By: zmadi <zmadi@student.wethinkcode.co.za>    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2019/05/21 12:14:07 by zmadi             #+#    #+#              #
-#    Updated: 2019/09/17 17:34:00 by zmadi            ###   ########.fr        #
+#    Updated: 2019/09/20 14:02:01 by zmadi            ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -35,7 +35,7 @@ CFLAGS = -Wall -Werror -Wextra
 all:$(NAME)
 
 $(NAME):
-	gcc -c $(CFLAGS) $(SRC)
+	@gcc -c $(CFLAGS) $(SRC)
 	ar rc $(NAME) $(OBJ)
 	ranlib $(NAME)
 
