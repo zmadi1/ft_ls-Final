@@ -6,7 +6,7 @@
 /*   By: zmadi <zmadi@student.wethinkcode.co.za>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/05 08:38:13 by zmadi             #+#    #+#             */
-/*   Updated: 2019/09/19 08:17:53 by zmadi            ###   ########.fr       */
+/*   Updated: 2019/11/19 11:58:23 by zmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -93,6 +93,10 @@ void	ft_file_info(char **ptr, char *dir)
 	char		*str;
 
 	i = 0;
+	display_blockcount(blockcount(ptr));
+	// ft_putstr("total ");
+	// ft_putnbr(blockcount(ptr));
+	// ft_putendl(" ");
 	while (ptr[i] != NULL)
 	{
 		lstat((str = ft_path(ptr[i], dir)), &checker);

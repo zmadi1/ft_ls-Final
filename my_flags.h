@@ -6,7 +6,7 @@
 /*   By: zmadi <zmadi@student.wethinkcode.co.za>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/09 13:50:10 by zmadi             #+#    #+#             */
-/*   Updated: 2019/09/20 10:26:30 by zmadi            ###   ########.fr       */
+/*   Updated: 2019/11/19 12:01:25 by zmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,7 +65,9 @@ char				*ft_changer(char **ptr);
 void				ft_protector(char **new, char *dir);
 void				ft_no_argument(char **str, t_flags *flag);
 void				ft_delete(char **ptr);
-void				ft_content_while(char **new, char **temp,
+void				ft_content_while(char **new, /*char **temp*/
 					t_flags *flag, char **dir);
+blkcnt_t					blockcount(char ** directory);
+void				 display_blockcount(blkcnt_t count);
 
 #endif

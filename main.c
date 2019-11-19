@@ -6,7 +6,7 @@
 /*   By: zmadi <zmadi@student.wethinkcode.co.za>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2019/08/19 10:35:20 by zmadi             #+#    #+#             */
-/*   Updated: 2019/09/20 14:15:29 by zmadi            ###   ########.fr       */
+/*   Updated: 2019/11/19 09:00:33 by zmadi            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,7 +86,7 @@ void	ft_jump_argone(char **str, t_flags *flag)
 			ft_file_info(new, str[j]);
 		while (new[i] != NULL && flag->flag_l == '0')
 			ft_putendl(new[i++]);
-		ft_putchar('\n');
+		//ft_putchar('\n');
 		j++;
 	}
 	ft_delete(new);
